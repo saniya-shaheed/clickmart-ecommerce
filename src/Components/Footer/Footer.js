@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer d-md-flex p-3">
         <div className="col-md-6 d-flex d-md-flex">
           <ul className="col-6 list-unstyled ">
-            <li><Link to='/'> Home </Link></li>
+            <li><Link to='/clickmart-ecommerce'> Home </Link></li>
             <li><Link to='/shop/menclothing'> Shop </Link></li>
             <li><Link to='/help'> Help </Link></li>
           </ul>

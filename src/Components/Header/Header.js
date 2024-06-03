@@ -37,7 +37,7 @@ function Header( {onSearch, resetSearch} ) {
     <header>
       <nav className="navbar navbar-one">
         <div className="container-fluid">
-          <Link to='/' className="navbar-brand ps-md-3" onClick={handleHomeClick}>
+          <Link to='/clickmart-ecommerce' className="navbar-brand ps-md-3" onClick={handleHomeClick}>
             <h6 className="display-6">ClickMART</h6>
           </Link>
           <div className="right-links d-flex pe-md-3">
@@ -72,7 +72,7 @@ function Header( {onSearch, resetSearch} ) {
           <div className="navbar-two-links" id="navbarNavDropdown">
             <ul className="navbar-nav d-flex flex-row">
               <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
-                <Link to='/' className="nav-link" aria-current="page" onClick={resetSearch}>
+                <Link to='/clickmart-ecommerce' className="nav-link" aria-current="page" onClick={resetSearch}>
                   Home
                 </Link>
               </li>
