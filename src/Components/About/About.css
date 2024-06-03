@@ -1,0 +1,14 @@
+.about {
+  background-image: url(C:\Users\Admin\React\clickmart\public\about_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.about h6 {
+  font-size: 1.7rem;
+}
+
+.about hr {
+  width: 90%;
+  margin: 0 auto;
+}

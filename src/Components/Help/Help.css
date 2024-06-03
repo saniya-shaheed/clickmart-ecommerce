@@ -1,0 +1,32 @@
+.help {
+    background-image: url(C:\Users\Admin\React\clickmart\public\about_bg.jpg);
+    background-position:  center;
+    background-size: cover;
+}
+
+.help input {
+    border-color: #266665;
+    border-radius: 5px;
+}
+
+.help hr {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.help svg {
+    position: absolute;
+    fill: green;
+    left: 12%;
+}
+
+.help a {
+    color: #377c7a;
+    font-size: 1.2rem;
+}
+
+.help a:hover {
+    text-decoration: underline;
+    color: cadetblue;
+}
+

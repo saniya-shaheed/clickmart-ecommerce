@@ -1,0 +1,78 @@
+.sign-in-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.sign-in-form label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.sign-in-form input {
+  height: 30px;
+}
+
+.password-label {
+  justify-content: space-between;
+}
+
+.password-label a {
+  font-size: 0.9rem;
+}
+
+.sign-in-button {
+  background-color: #266665;
+  color: #fff;
+}
+
+.sign-in-button:hover {
+  background-color: #377c7a;
+  color: #fff;
+}
+
+.terms-and-privacy {
+  font-size: 0.85rem;
+}
+
+.terms-and-privacy a {
+  text-decoration: none;
+}
+
+.keep-signed-in {
+  font-size: 0.9rem;
+}
+
+.keep-signed-in input {
+  height: 16px;
+  width: 16px;
+}
+
+.new-member p {
+  font-size: 0.85rem;
+  color: rgb(120, 119, 119);
+  font-weight: 500;
+}
+
+.new-member-btn button {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  box-shadow: 0 1px 2px 1px lightgray;
+  border-radius: 10px;
+  color: black;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.new-member-btn button:hover {
+  background-color: rgb(243, 240, 240);
+}

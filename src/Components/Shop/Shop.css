@@ -1,0 +1,30 @@
+.shop {
+    margin-top: -20px;
+    background-image: url(C:\Users\Admin\React\clickmart\public\about_bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .shop h5 {
+    color: cadetblue;
+  }
+  
+  .products-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .products-container a {
+    text-decoration: none;
+  }
+  
+  .products-container .card-title {
+    text-transform: uppercase;
+  }
+  
+  @media (min-width: 768px) {
+    .products-container {
+      justify-content: start;
+    }
+  }
+  

@@ -1,0 +1,98 @@
+.product-details h4 {
+    font-weight: 500;
+}
+
+.progress {
+    height: 6px;
+    align-items: center;
+    font-size: 0.5rem;
+}
+
+.progress-bar {
+    background-color: cadetblue;
+}
+
+.no-of-people-bought {
+    font-size: smaller;
+}
+
+.product-details .price {
+    font-weight: bold;
+}
+
+.product-details .sign-in {
+    font-size: small;
+    color: rgb(95, 94, 94);
+}
+
+.scroll-icons-container svg {
+    height: 35px;
+    fill: dimgrey;
+}
+
+.product-details-icons {
+    flex-wrap: wrap;
+}
+
+.product-details-icons a {
+    background-color:  none;
+}
+
+.product-details-icons img {
+    width: 50px;
+}
+
+.product-details-icons p {
+    color: cadetblue;
+}
+
+.product-details-icons-popup .card {
+    height: 50%;
+    width: 80%;
+}
+
+.product-details-icons a:hover {
+    border: 1px solid black;
+}
+
+.column-headings {
+    font-weight: 500;
+}
+
+.column-contents td {
+    font-size: 0.9rem;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.product-image img {
+    width: 50%;
+}
+
+.report-issue a:hover {
+    columns: red;
+}
+
+.add-to-cart-button {
+    background-color: none;
+    border: 1px solid cadetblue;
+    color: rgb(54, 117, 119);
+}
+
+.add-to-cart-button:hover {
+    background-color: cadetblue;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+
+    .product-details-icons img {
+        width: 40%;
+    }
+
+
+}

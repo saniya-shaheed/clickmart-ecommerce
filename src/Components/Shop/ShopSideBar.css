@@ -1,0 +1,26 @@
+.shop-sidebar {
+  align-items: start;
+
+  height: 100%;
+}
+
+.sidebar-links .active {
+  font-weight: bold;
+}
+
+.shop-sidebar .navbar-toggler-button {
+  border: none;
+  font-size: 1rem;
+  background: none;
+  color: #266662;
+}
+
+.shop-sidebar .navbar-toggler-button:focus {
+  border: none !important;
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .shop-sidebar {
+    background-color: rgb(235, 244, 244);
+  }
+}

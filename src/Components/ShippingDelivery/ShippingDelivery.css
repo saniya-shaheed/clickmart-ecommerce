@@ -1,0 +1,107 @@
+.shipping-delivery {
+    background-image: url(C:\Users\Admin\React\clickmart\public\about_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.all-help-topics {
+    color: #377c7a;
+}
+
+.all-help-topics-list a {
+    color: black;
+}
+
+.all-help-topics:hover {
+    color: #266662;
+    text-decoration: underline;
+}
+
+.all-help-topics-list a:hover, .topics a:hover {
+    text-decoration: underline;
+    color: #377c7a;
+}
+.shipping-delivery .active {
+    font-weight: 500;
+}
+
+.all-help-topics, .all-help-topics-list {
+    border: 1px solid lightgray;
+}
+
+.track-package-question {
+    background-color: rgb(231, 239, 242);
+    border: 1px solid rgb(104, 137, 149);
+    border-radius: 5px;
+}
+.track-package-question p {
+    color: black;
+}
+
+.track-package-question button {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(251, 222, 5);
+}
+
+.track-package-question button:hover {
+    background-color: rgb(215, 190, 5);
+}
+.headings p {
+    font-weight: 500;
+    color: black;
+    font-size: 0.9rem;
+}
+.topics a {
+    color: #377c7a;
+}
+
+.topics a:hover {
+    color: cadetblue;
+}
+
+.shipping-delivery hr {
+    color: black;
+}
+
+.helpful-or-not-question {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.helpful-or-not-question p {
+    color: black;
+}
+
+.yes-or-no-buttons {
+    display: flex;
+}
+.yes-or-no-buttons button {
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px lightgray;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.yes-or-no-buttons button:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+.bottom-hr {
+    border: 1.5px solid rgb(70, 66, 66);
+}
+
+@media (max-width: 767px) {
+
+    .all-help-topics {
+        border: none;
+    }
+
+    .track-package {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,57 @@
+.careers {
+  height: 348px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  border-color: #266665;
+}
+
+.input-group-prepend,
+.input-group-text {
+  background-color: #266665;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-group-text {
+  border: none;
+}
+
+.careers svg {
+  fill: #fff;
+  height: 20px;
+  width: 20px;
+}
+
+.input-group-text:hover,
+.input-group-prepend:hover {
+  background-color: cadetblue;
+  border-color: #266665;
+}
+
+@media (max-width: 576px) {
+  .form-control {
+    width: 100% !important ;
+  }
+
+  .input-job {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+  }
+
+  .input-location {
+    border-radius: 5px !important;
+  }
+
+  .input-group-text,
+  .input-group-prepend {
+    border-radius: 5px !important;
+  }
+
+  .input-group-text {
+    justify-content: center;
+  }
+}
