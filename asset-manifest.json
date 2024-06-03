@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/clickmart-ecommerce/static/css/main.2faacf44.css",
-    "main.js": "/clickmart-ecommerce/static/js/main.9fa47a13.js",
+    "main.js": "/clickmart-ecommerce/static/js/main.db50ed0a.js",
     "static/media/about_bg.jpg": "/clickmart-ecommerce/static/media/about_bg.371c0eb90c649a2c53db.jpg",
     "index.html": "/clickmart-ecommerce/index.html",
     "main.2faacf44.css.map": "/clickmart-ecommerce/static/css/main.2faacf44.css.map",
-    "main.9fa47a13.js.map": "/clickmart-ecommerce/static/js/main.9fa47a13.js.map"
+    "main.db50ed0a.js.map": "/clickmart-ecommerce/static/js/main.db50ed0a.js.map"
   },
   "entrypoints": [
     "static/css/main.2faacf44.css",
-    "static/js/main.9fa47a13.js"
+    "static/js/main.db50ed0a.js"
   ]
 }
