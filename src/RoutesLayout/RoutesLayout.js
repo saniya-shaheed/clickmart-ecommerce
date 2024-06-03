@@ -84,7 +84,7 @@ function MainContent({ query, filteredProducts}) {
     ) : (
         
         <Routes>
-          <Route path="/clickmart-ecommerce" element={<Home />} />
+          <Route path="/clickmartecommerce" element={<Home />} />
           <Route path="/shop/menclothing" element={<Shop />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/about" element={<About />} />
