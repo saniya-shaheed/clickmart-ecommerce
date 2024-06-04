@@ -1,109 +1,95 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
-  
+
 body {
-   padding-top: 125px;
+  padding-top: 125px;
 }
-  
+
 .navbar-one {
-    background-color: #266665;
+  background-color: #266665;
 }
 
 .navbar-one input {
-    border: none;
-    border-radius: 5px;
+  border: none;
+  border-radius: 5px;
 }
 
-
-
 .navbar-brand h6 {
-    font-weight: bolder;
-    color: #fff;
+  font-weight: bolder;
+  color: #fff;
 }
 
 .right-links {
-    gap: 5px;
+  gap: 5px;
 }
 
 .right-links svg {
-    height: 20px;
-    width: 20px;
-    fill: #fff;
-    
+  height: 20px;
+  width: 20px;
+  fill: #fff;
 }
 
 .right-links svg:hover {
-    cursor: pointer;
-    fill: lightgray;
+  cursor: pointer;
+  fill: lightgray;
 }
 
 .navbar-two {
-    background-color: #fff;
+  background-color: #fff;
 }
 .navbar-two-links ul {
-    gap: 10px;
+  gap: 10px;
 }
 
 .navbar-two {
-    color: #266665;
-    font-weight: 500;
+  color: #266665;
+  font-weight: 500;
 }
-
-
-
-
 
 /* ========================================== */
 
+@media (min-width: 576px) {
+  .right-links {
+    gap: 20px;
+  }
 
-@media (min-width: 576px) { 
-
-    .right-links {
-        gap: 20px;
-    }
-
-    .navbar-two-links ul {
-        gap: 30px;
-    }
-
+  .navbar-two-links ul {
+    gap: 30px;
+  }
 }
 @media (min-width: 768px) {
+  .right-links {
+    gap: 40px;
+  }
 
-    .right-links {
-        gap: 40px;
-    }
+  .right-links svg {
+    height: 25px;
+    width: 25px;
+  }
 
-    .right-links svg {
-        height: 25px;
-        width: 25px;
-    }
+  .navbar-one input {
+    width: 200px;
+  }
 
-    .navbar-one input {
-        width: 200px;
-    }
-
-    .navbar-two-links ul {
-        gap: 50px;
-        font-size: 1.15rem;
-    }
-
+  .navbar-two-links ul {
+    gap: 50px;
+    font-size: 1.15rem;
+  }
 }
-@media (min-width: 992px) { 
-
-    .navbar-two-links ul {
-        gap: 65px;
-    } 
-
+@media (min-width: 992px) {
+  .navbar-two-links ul {
+    gap: 65px;
+  }
 }
 @media (min-width: 1026px) {
-
-    .navbar-one input {
-        width: 500px;
-    }
+  .navbar-one input {
+    width: 500px;
+  }
 }
-@media (min-width: 1400px) { }
+@media (min-width: 1400px) {
+}

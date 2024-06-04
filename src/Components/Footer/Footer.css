@@ -12,6 +12,18 @@
     color: cadetblue;
 }
 
+.social-media-links a:hover {
+    cursor: pointer;
+}
+.social-media-links svg {
+    height: 25px;
+    fill: #fff;
+}
+
+.social-media-links svg:hover {
+    fill: cadetblue;
+}
+
 .copyright-section {
     font-size: 12px;
     align-items: flex-end;

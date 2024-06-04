@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import { BrowserRouter as Router, Route, Routes, Link, useLocation} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useLocation,
+} from "react-router-dom";
 import Home from "../Components/Home/Home";
 import Shop from "../Components/Shop/Shop";
 import Careers from "../Components/Careers/Careers";
@@ -14,7 +20,7 @@ import WomenClothing from "../Components/Shop/WomenClothing";
 import Jewelery from "../Components/Shop/Jewelery";
 import MenClothing from "../Components/Shop/MenClothing";
 import Electronics from "../Components/Shop/Electronics";
-import '../Components/Home/Home.css'
+import "../Components/Home/Home.css";
 import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 
 function RoutesLayout() {
@@ -24,40 +30,44 @@ function RoutesLayout() {
   const handleSearch = (resultProducts, searchQuery) => {
     setFilteredProducts(resultProducts);
     setQuery(searchQuery);
-  }
+  };
 
   const resetSearch = () => {
     setFilteredProducts([]);
     setQuery("");
-  }
+  };
 
   return (
     <Router>
-    <Header onSearch={handleSearch} resetSearch={resetSearch}/>
-    <MainContent query={query} filteredProducts={filteredProducts} />
-    <Footer />
+      <Header onSearch={handleSearch} resetSearch={resetSearch} />
+      <MainContent query={query} filteredProducts={filteredProducts} />
+      <Footer />
     </Router>
-  )
+  );
 }
 
-function MainContent({ query, filteredProducts}) {
+function MainContent({ query, filteredProducts }) {
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-}, [location.pathname]);
+  }, [location.pathname]);
 
-
-    return (
-        <main>
-        { query.length > 0 && location.pathname === "/" ? ( 
-          filteredProducts.length > 0 ? (
+  return (
+    <main>
+      {query.length > 0 && location.pathname === "/" ? (
+        filteredProducts.length > 0 ? (
           <div className="searched-results d-flex justify-content-center">
-          <ul className="list-unstyled d-md-flex  justify-content-md-start">
-            {filteredProducts.map(product => (
-              <li key={product.id}>
-                <Link to={`/shop/${product.id}`} className="text-decoration-none">
-                <div class="card">
+
+            {/* searched results */}
+            <ul className="list-unstyled d-md-flex  justify-content-md-start">
+              {filteredProducts.map((product) => (
+                <li key={product.id}>
+                  <Link
+                    to={`/shop/${product.id}`}
+                    className="text-decoration-none"
+                  >
+                    <div class="card">
                       <img
                         class="card-img-top p-3"
                         src={product.image}
@@ -73,16 +83,26 @@ function MainContent({ query, filteredProducts}) {
                         </a>
                       </div>
                     </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div> 
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {/* searched result over */}
+          </div>
+        ) : (
+          <div
+            className="d-flex"
+            style={{
+              height: "350px",
+              justifyContent: "space-around",
+              alignItems: "center",
+            }}
+          >
+            {" "}
+            Sorry, the product is not available.{" "}
+          </div>
+        )
       ) : (
-        <div className="d-flex" style={{height: '350px', justifyContent:'space-around', alignItems:'center'}}> Sorry, the product is not available. </div>
-      ) 
-    ) : (
-        
         <Routes>
           <Route path="/clickmart-ecommerce" element={<Home />} />
           <Route path="/shop/menclothing" element={<Shop />} />
@@ -102,7 +122,7 @@ function MainContent({ query, filteredProducts}) {
           <Route path="/shop/electronics" element={<Electronics />} />
         </Routes>
       )}
-        </main>
+    </main>
   );
 }
 
